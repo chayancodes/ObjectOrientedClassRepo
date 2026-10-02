@@ -15,19 +15,19 @@ void displaymenu() {
     cout<<"Enter Choice:";
 };
 
-vector<int> choicerun(){
-    int a,b;
+vector<double> choicerun(){
+    double a,b;
     cout<<"Enter Number 1:";
     cin>>a;
     cout<<"Enter Number 2:";
     cin>>b;
-    vector<int> result = {a,b};
+    vector<double> result = {a,b};
     return result;
 };
 
 int main() {
     int choice;
-    vector<int> re;
+    vector<double> re;
     double result;
 
     while (true) {
@@ -35,32 +35,39 @@ int main() {
         cin>>choice;
         switch (choice) {
             case 1:
-                cout<<"Addition Selected";
+                cout<<"Addition Selected"<<endl;
                 re=choicerun();
                 result=add(re[0],re[1]);
-                cout<<"Answer is:"<<result;
+                cout<<"Answer is:"<<result<<endl;
                 break;
             case 2:
-                cout<<"Subtraction Selected";
+                cout<<"Subtraction Selected"<<endl;
                 re=choicerun();
                 result=sub(re[0],re[1]);
-                cout<<"Answer is:"<<result;
+                cout<<"Answer is:"<<result<<endl;
                 break;
             case 3:
-                cout<<"Multiplication Selected";
+                cout<<"Multiplication Selected"<<endl;
                 re=choicerun();
                 result=mult(re[0],re[1]);
-                cout<<"Answer is:"<<result;
+                cout<<"Answer is:"<<result<<endl;
                 break;
             case 4:
-                cout<<"Division Selected";
+                cout<<"Division Selected"<<endl;
                 re=choicerun();
-                result=divy(re[0],re[1]);
-                cout<<"Answer is:"<<result;
+                if (re[1]==0) {
+                    cout<<"Invalid second input"<<endl;
+                } else {
+                    result=divy(re[0],re[1]);
+                    cout<<"Answer is:"<<result<<endl;
+                    }
                 break;
             case 5:
-                cout<<"Shutting program down";
+                cout<<"Shutting program down"<<endl;
                 return 0;
+            default:
+                cout<<"Invalid Choice, please try again";
+                break;
         }
     }
 }
