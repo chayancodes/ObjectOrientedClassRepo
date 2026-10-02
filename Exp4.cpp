@@ -1,0 +1,1 @@
+//Objective: Design a Student class to store student details, calculate marks, percentage, and grade, and display the results.

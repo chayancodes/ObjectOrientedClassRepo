@@ -1,0 +1,1 @@
+// Objective: Implement dynamic memory allocation for an array of objects using pointers and the new and delete operators.

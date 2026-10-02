@@ -1,0 +1,1 @@
+// Objective: Develop a program to calculate employee salary using functions with default arguments for allowances and deductions.

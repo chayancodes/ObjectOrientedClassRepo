@@ -1,0 +1,1 @@
+//Objective: Design an Employee class using private data members and public member functions to implement data hiding.
