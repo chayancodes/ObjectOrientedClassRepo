@@ -16,7 +16,7 @@ double volume(double a, double b, double c){
 
 int main() {
     cout<<"Volume of cube with side 4:"<<volume(4)<<endl;
-    cout<<"Volume of cyllinder with radius 4 and height 5:"<<volume(4,5)<<endl;
+    cout<<"Volume of cylinder with radius 4 and height 5:"<<volume(4,5)<<endl;
     cout<<"Volume of cuboid with length 4, width 5 and height 6:"<<volume(4,5,6)<<endl;
     return 0;
 }
