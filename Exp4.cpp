@@ -47,7 +47,6 @@ public:
         cout << "Grade: " << grade << endl;
     }
 };
-
 int main() {
     Student s;
     s.input();
